@@ -9,6 +9,7 @@ dependencies = [
     "fastmcp>=2.0.0",
     "gradio==4.44.1",
     "hello-agents[all]==0.2.2",
+    "mcp[cli]>=1.16.0",
     "qdrant-client==1.15.1",
     "starlette==0.38.6",
 ]

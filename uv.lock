@@ -759,6 +759,7 @@ dependencies = [
     { name = "fastmcp" },
     { name = "gradio" },
     { name = "hello-agents", extra = ["all"] },
+    { name = "mcp", extra = ["cli"] },
     { name = "qdrant-client" },
     { name = "starlette" },
 ]
@@ -769,6 +770,7 @@ requires-dist = [
     { name = "fastmcp", specifier = ">=2.0.0" },
     { name = "gradio", specifier = "==4.44.1" },
     { name = "hello-agents", extras = ["all"], specifier = "==0.2.2" },
+    { name = "mcp", extras = ["cli"], specifier = ">=1.16.0" },
     { name = "qdrant-client", specifier = "==1.15.1" },
     { name = "starlette", specifier = "==0.38.6" },
 ]
@@ -1220,6 +1222,12 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/3d/a1/b1f328da3b153683d2ec34f849b4b6eac2790fb240e3aef06ff2fab3df9d/mcp-1.16.0.tar.gz", hash = "sha256:39b8ca25460c578ee2cdad33feeea122694cfdf73eef58bee76c42f6ef0589df", size = 472918, upload-time = "2025-10-02T16:58:20.631Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c9/0e/7cebc88e17daf94ebe28c95633af595ccb2864dc2ee7abd75542d98495cc/mcp-1.16.0-py3-none-any.whl", hash = "sha256:ec917be9a5d31b09ba331e1768aa576e0af45470d657a0319996a20a57d7d633", size = 167266, upload-time = "2025-10-02T16:58:19.039Z" },
+]
+
+[package.optional-dependencies]
+cli = [
+    { name = "python-dotenv" },
+    { name = "typer" },
 ]
 
 [[package]]
