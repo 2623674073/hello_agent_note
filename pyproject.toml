@@ -3,11 +3,12 @@ name = "hello-agent-note"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.13"
 dependencies = [
     "fastapi==0.115.2",
+    "fastmcp>=2.0.0",
     "gradio==4.44.1",
-    "hello-agents[all]==0.2.0",
+    "hello-agents[all]==0.2.2",
     "qdrant-client==1.15.1",
     "starlette==0.38.6",
 ]

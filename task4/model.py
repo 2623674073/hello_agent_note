@@ -52,3 +52,5 @@ class ContextConfig:
         assert 0.0 <= self.min_relevance <= 1.0, "min_relevance 必须在 [0, 1] 范围内"
         assert abs(self.recency_weight + self.relevance_weight - 1.0) < 1e-6, \
             "recency_weight + relevance_weight 必须等于 1.0"
+
+
